@@ -71,11 +71,37 @@
           <li><a href="memes.html">Memes</a></li>
         </ul>
       </li>
+      <li><a class="nav-link scrollto" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;">Avalie</a></li>
     <i class="bi bi-list mobile-nav-toggle"></i>
   </nav><!-- .navbar -->
 
 </header><!-- End Header -->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #cf1d61; color:white">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nos avalie</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form method="post" action="salvar_formulario.php">
+        <h5>Você conseguiu reconhecer o objetivo do site? Descreva-o.</h5>
+        <input type="text" name="objetivo" required/>
+      <h5>Você achou o site organizado?</h5>
+        <input type="text" name="organizado" required/>
+      <h5>Dê uma nota de 0 a 10 para o nosso site</h5>
+        <input type="text"  name="nota" min="0" max="10" required/>
+        <button type="submit">Enviar</button>
+      </form>
+      
+      </div>
+      
+    </div>
+  </div>
+  </div>
 
   <main id="main">
 
